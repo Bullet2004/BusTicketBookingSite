@@ -1,27 +1,27 @@
 import React from 'react'
-import './Sidebar.css'
+import styles from './Sidebar.module.css'
 
 const Sidebar = () => {
   return (
-    <div className="sidebar">
+    <div className={styles.sidebar}>
         <h3>Nhà Xe</h3>
-        <a href="/src/view/admin_view/index.html" className="sidebar-item active">
+        <a href="/src/view/admin_view/index.html" className={`${styles.sidebarItem} ${styles.active}`}>
             <i className="fa-solid fa-house"></i>
             Trang chủ
         </a>
-        <a href="/src/view/admin_view/schedule.html" className="sidebar-item">
+        <a href="/src/view/admin_view/schedule.html" className={styles.sidebarItem}>
             <i className="fa-solid fa-bus"></i>
             Chuyến đi
         </a>
-        <a href="/src/view/admin_view/ticket.html" className="sidebar-item">
+        <a href="/src/view/admin_view/ticket.html" className={styles.sidebarItem}>
             <i className="fa-solid fa-ticket"></i>
             Đặt vé
         </a>
-        <a href="/src/view/admin_view/revenue.html" className="sidebar-item">
+        <a href="/src/view/admin_view/revenue.html" className={styles.sidebarItem}>
             <i className="fa-solid fa-chart-line"></i>
             Doanh thu
         </a>
-        <a href="/src/view/admin_view/feedback.html" className="sidebar-item">
+        <a href="/src/view/admin_view/feedback.html" className={styles.sidebarItem}>
             <i className="fa-solid fa-comments"></i>
             Phản hồi
         </a>

@@ -1,12 +1,12 @@
 import React from 'react'
-import './Footer.css'
+import styles from './FooterClient.module.css'
 
 const Footer = () => {
   return (
     <>
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-section">
+      <footer className={styles.footer}>
+        <div className={styles.footerContent}>
+          <div className={styles.footerSection}>
             <h3>Cam kết</h3>
             <ul>
               <li>
@@ -23,7 +23,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer-section">
+          <div className={styles.footerSection}>
             <h3>Truy cập</h3>
             <ul>
               <li><a href="#">Đặt vé</a></li>
@@ -32,27 +32,27 @@ const Footer = () => {
               <li><a href="#">Các câu hỏi thường gặp</a></li>
             </ul>
           </div>
-          <div className="footer-section">
+          <div className={styles.footerSection}>
             <h3>Contact Info</h3>
-            <ul className="contact-info">
+            <ul className={styles.contactInfo}>
               <li><i className="fas fa-phone"></i> 0949397986</li>
               <li><i className="fas fa-envelope"></i> info@phucnguyenbus.com</li>
               <li><i className="fas fa-map-marker-alt"></i> Nghệ An - Hà Tĩnh - Lệ Thuỷ</li>
             </ul>
           </div>
-          <div className="footer-section">
+          <div className={styles.footerSection}>
             <h3>Theo dõi chúng tôi</h3>
-            <div className="social-links">
+            <div className={styles.socialLinks}>
               <a href="#"><i className="fab fa-facebook"></i></a>
               <a href="#"><i className="fab fa-zalo"></i></a>
               <a href="#"><i className="fab fa-instagram"></i></a>
             </div>
-            <div className="qr-code">
+            <div className={styles.qrCode}>
               <img src="/src/assets/img/qr.png" alt="Zalo QR Code" />
             </div>
           </div>
         </div>
-        <div className="footer-bottom">
+        <div className={styles.footerBottom}>
           <p>&copy; 2025 Phuc Nguyen Bus. All rights reserved.</p>
         </div>
       </footer>

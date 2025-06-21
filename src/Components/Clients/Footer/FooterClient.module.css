@@ -5,7 +5,7 @@
     margin-top: 2rem;
 }
 
-.footer-content {
+.footerContent {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
@@ -13,33 +13,33 @@
     flex-wrap: wrap;
 }
 
-.footer-section h3 {
+.footerSection h3 {
     color: var(--primary-color);
     margin-bottom: 1.2rem;
     font-size: 1.3rem;
 }
 
-.footer-section p {
+.footerSection p {
     line-height: 1.6;
     color: #ccc;
     margin: 0 auto;
 }
 
-.footer-section ul {
+.footerSection ul {
     list-style: none;
 }
 
-.footer-section ul li {
+.footerSection ul li {
     margin-bottom: 0.8rem;
 }
 
-.footer-section ul li a {
+.footerSection ul li a {
     color: #ccc;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.footer-section ul li a:hover {
+.footerSection ul li a:hover {
     color: var(--primary-color);
 }
 
@@ -48,51 +48,51 @@
     margin-right: 5px;
 }
 
-.contact-info li {
+.contactInfo li {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     color: #ccc;
 }
 
-.contact-info li i {
+.contactInfo li i {
     color: var(--primary-color);
     width: 20px;
 }
 
-.social-links {
+.socialLinks {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
 }
 
-.social-links a {
+.socialLinks a {
     color: var(--white);
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
-.social-links a:hover {
+.socialLinks a:hover {
     color: var(--primary-color);
 }
 
-.qr-code {
+.qrCode {
     margin-top: 1rem;
 }
 
-.qr-code img {
+.qrCode img {
     width: 100px;
     height: 100px;
     border-radius: 8px;
 }
 
-.footer-bottom {
+.footerBottom {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.footer-bottom p {
+.footerBottom p {
     color: #888;
     font-size: 0.9rem;
 }

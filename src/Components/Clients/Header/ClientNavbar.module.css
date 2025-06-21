@@ -1,0 +1,119 @@
+:root {
+    --primary-client-color: #1dbfaf;
+    --secondary-client-color: #2a9d8f;
+    --client-white: #ffffff;
+    --client-dark: #333333;
+    --accent-client-color: #ff6b6b;
+    --text-client-color: #2d3436;
+    --client-light-gray: #f8f9fa;
+    --client-border-color: #e9ecef;
+    --client-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --client-gradient: linear-gradient(135deg, #1dbfaf 0%, #2a9d8f 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    background-color: var(--client-light-gray);
+    color: var(--text-client-color);
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: var(--client-white);
+    box-client-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 500;
+}
+
+.logo h1 {
+    color: var(--primary-client-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.navLinks li {
+    position: relative;
+    list-style: none;
+}
+
+.navLinks li::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px; /* độ dày border */
+    background-color: var(--primary-client-color); /* màu border */
+    transition: width 0.2s ease;
+}
+
+.navLinks li:hover::after {
+    width: 100%;
+}
+
+
+.navLinks {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: var(--client-dark);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navLinks a:hover,
+.navLinks a.active {
+    color: var(--primary-client-color);
+}
+
+.authButtons {
+    display: flex;
+    gap: 1rem;
+}
+
+.authButtons a {
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.loginBtn {
+    color: var(--primary-client-color);
+    border: 2px solid var(--primary-client-color);
+}
+
+.loginBtn:hover {
+    background-color: var(--primary-client-color);
+    color: var(--client-white);
+}
+
+.signupBtn {
+    background-color: var(--primary-client-color);
+    color: var(--client-white);
+    border: 2px solid var(--primary-client-color);
+}
+
+.signupBtn:hover {
+    background-color: transparent;
+    color: var(--primary-client-color);
+}

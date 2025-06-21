@@ -1,19 +1,19 @@
 import React from 'react'
-import './Navbar.css'
+import styles from './AdminNavbar.module.css'
 
 const Navbar = () => {
   return (
-    <div className="main-content">
-        <nav className="navbar">
-            <div className="container-fluid">
-                <a className="left-nav" href="#">Quản Lý Nhà Xe</a>
-                <div className="right-nav">
-                    <ul className="right-nav-list">
-                        <li className="nav-item">
-                            <a className="nav-link" href="#"><i className="fas fa-bell me-2"></i>Thông báo</a>
+    <div className={styles.mainContent}>
+        <nav className={styles.navbar}>
+            <div className={styles.containerFluid}>
+                <a className={styles.leftNav} href="#">Quản Lý Nhà Xe</a>
+                <div className={styles.rightNav}>
+                    <ul className={styles.rightNavList}>
+                        <li className={styles.navItem}>
+                            <a className={styles.navLink} href="#"><i className="fas fa-bell me-2"></i>Thông báo</a>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#"><i className="fas fa-user me-2"></i>Tài khoản</a>
+                        <li className={styles.navItem}>
+                            <a className={styles.navLink} href="#"><i className="fas fa-user me-2"></i>Tài khoản</a>
                         </li>
                     </ul>
                 </div>

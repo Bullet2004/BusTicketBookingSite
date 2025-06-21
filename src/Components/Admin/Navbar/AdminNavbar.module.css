@@ -1,0 +1,66 @@
+:root {
+    --primary-admin-color: #3b82f6;
+    --secondary-admin-color: #1d4ed8;
+    --success-admin-color: #10b981;
+    --warning-admin-color: #f59e0b;
+    --danger-admin-color: #ef4444;
+    --sidebar-admin-bg: #1e293b;
+    --card-shadow-admin: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f9;
+}
+
+.mainContent {
+    margin-left: 280px;
+}
+
+.navbar {
+    background-color: var(--sidebar-admin-bg);
+    box-shadow: var(--card-shadow-admin);
+    padding: 16px 0;
+    margin-bottom: 32px;
+    margin-left: -32px;
+}
+
+.containerFluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    gap: 800px;
+}
+
+.leftNav {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.rightNav {
+
+}
+
+.rightNavList {
+    display: flex;
+    align-items: center;
+}
+
+.navItem {
+    list-style: none;
+}
+
+.navLink {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navLink:hover {
+    color: var(--primary-admin-color);
+}

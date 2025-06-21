@@ -1,5 +1,5 @@
 .sidebar {
-    background-color: var(--sidebar-bg);
+    background-color: var(--sidebar-admin-bg);
     min-height: 100vh;
     width: 280px;
     position: fixed;
@@ -7,7 +7,7 @@
     top: 0;
     padding: 1.5rem;
     color: white;
-    box-shadow: var(--card-shadow);
+    box-shadow: var(--card-admin-shadow);
 }
 
 .sidebar h3 {
@@ -20,7 +20,7 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.sidebar-item {
+.sidebarItem {
     display: flex;
     align-items: center;
     padding: 0.75rem 1rem;
@@ -31,12 +31,13 @@
     transition: all 0.3s ease;
 }
 
-.sidebar-item:hover, .sidebar-item.active {
+.sidebarItem:hover,
+.active {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
 }
 
-.sidebar-item i {
+.sidebarItem i {
     margin-right: 0.75rem;
     font-size: 1.1rem;
     width: 24px;

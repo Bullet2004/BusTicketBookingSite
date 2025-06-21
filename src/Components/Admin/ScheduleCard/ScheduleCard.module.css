@@ -1,42 +1,45 @@
-.schedule-item {
+.scheduleItem {
     background: white;
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: var(--card-shadow);
+    box-shadow: var(--card-admin-shadow);
     transition: transform 0.3s ease;
 }
 
-.schedule-item:hover {
+.scheduleItem:hover {
     transform: translateY(-5px);
 }
 
-.schedule-img {
+.scheduleImg {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.schedule-group {
+.scheduleGroup {
     padding: 1.5rem;
 }
 
-.schedule-start-group, .end-group {
+.scheduleStartGroup,
+.endGroup {
     margin-bottom: 0.75rem;
 }
 
-.schedule-start-label, .schedule-end-label {
+.scheduleStartLabel,
+.scheduleEndLabel {
     display: block;
     font-size: 0.875rem;
     color: #64748b;
     margin-bottom: 0.25rem;
 }
 
-.schedule-start-postion, .schedule-end-position {
+.scheduleStartPosition,
+.scheduleEndPosition {
     font-weight: 500;
-    color: var(--sidebar-bg);
+    color: var(--sidebar-admin-bg);
 }
 
-.time-price-group {
+.timePriceGroup {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -48,11 +51,11 @@
 }
 
 .price {
-    color: var(--primary-color);
+    color: var(--primary-admin-color);
     font-weight: 600;
 }
 
-.schedule-action-group {
+.scheduleActionGroup {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
@@ -60,17 +63,21 @@
     border-top: 1px solid #e2e8f0;
 }
 
-.schedule-action-group i {
+.scheduleActionGroup i {
     cursor: pointer;
     color: #64748b;
     transition: color 0.3s ease;
     font-size: 1.1rem;
 }
 
-.schedule-action-group i.fa-pen:hover {
-    color: var(--primary-color);
+.scheduleActionGroup i.fa-pen {
+    color: var(--danger-admin-color);
 }
 
-.schedule-action-group i.fa-trash:hover {
-    color: var(--danger-color);
+.scheduleActionGroup i:first-child:hover {
+    color: var(--primary-admin-color);
+}
+
+.scheduleActionGroup i:last-child:hover {
+    color: var(--danger-admin-color);
 }

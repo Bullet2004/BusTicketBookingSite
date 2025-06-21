@@ -1,4 +1,4 @@
-.history-card {
+.historyCard {
     background: white;
     border-radius: 20px;
     overflow: hidden;
@@ -7,12 +7,12 @@
     position: relative;
 }
 
-.history-card:hover {
+.historyCard:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
-.history-card::before {
+.historyCard::before {
     content: '';
     position: absolute;
     top: 0;
@@ -22,50 +22,50 @@
     background: #1dbfaf;
 }
 
-.history-card-header {
+.historyCardHeader {
     padding: 1.5rem;
     border-bottom: 1px solid #eee;
 }
 
-.history-card-header h3 {
+.historyCardHeader h3 {
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 0.5rem;
 }
 
-.history-card-header p {
+.historyCardHeader p {
     color: #666;
     font-size: 0.9rem;
 }
 
-.history-card-body {
+.historyCardBody {
     padding: 1.5rem;
 }
 
-.history-info {
+.historyInfo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin-bottom: 1.5rem;
 }
 
-.history-info-item {
+.historyInfoItem {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.history-info-item i {
+.historyInfoItem i {
     color: #1dbfaf;
     font-size: 1.2rem;
 }
 
-.history-info-item span {
+.historyInfoItem span {
     color: #555;
     font-size: 0.9rem;
 }
 
-.history-status {
+.historyStatus {
     display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -73,22 +73,22 @@
     font-weight: 500;
 }
 
-.status-completed {
+.statusCompleted {
     background: rgba(29, 191, 175, 0.1);
     color: #1dbfaf;
 }
 
-.status-pending {
+.statusPending {
     background: rgba(255, 193, 7, 0.1);
     color: #ffc107;
 }
 
-.status-cancelled {
+.statusCancelled {
     background: rgba(220, 53, 69, 0.1);
     color: #dc3545;
 }
 
-.history-card-footer {
+.historyCardFooter {
     padding: 1.5rem;
     border-top: 1px solid #eee;
     display: flex;
@@ -96,22 +96,22 @@
     align-items: center;
 }
 
-.history-price {
+.historyPrice {
     font-size: 1.2rem;
     font-weight: 600;
     color: #333;
 }
 
-.history-price span {
+.historyPrice span {
     color: #1dbfaf;
 }
 
-.history-actions {
+.historyActions {
     display: flex;
     gap: 1rem;
 }
 
-.history-btn {
+.historyBtn {
     padding: 0.5rem 1rem;
     border-radius: 8px;
     font-size: 0.9rem;
@@ -123,30 +123,30 @@
     gap: 0.5rem;
 }
 
-.history-btn-primary {
+.historyBtnPrimary {
     background: #1dbfaf;
     color: white;
     border: none;
 }
 
-.history-btn-primary:hover {
+.historyBtnPrimary:hover {
     background: #1a9f8f;
     transform: translateY(-2px);
 }
 
-.history-btn-secondary {
+.historyBtnSecondary {
     background: #f8f9fa;
     color: #333;
     border: 1px solid #ddd;
 }
 
-.history-btn-secondary:hover {
+.historyBtnSecondary:hover {
     background: #e9ecef;
     transform: translateY(-2px);
 }
 
 /* Empty State */
-.history-empty {
+.historyEmpty {
     text-align: center;
     padding: 4rem 2rem;
     background: white;
@@ -154,23 +154,23 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-.history-empty i {
+.historyEmpty i {
     font-size: 4rem;
     color: #1dbfaf;
     margin-bottom: 1.5rem;
 }
 
-.history-empty h3 {
+.historyEmpty h3 {
     font-size: 1.8rem;
     color: #333;
     margin-bottom: 1rem;
 }
 
-.history-empty p {
+.historyEmpty p {
     color: #666;
     margin-bottom: 2rem;
 }
 
-.history-empty .history-btn {
+.historyEmpty .historyBtn {
     display: inline-flex;
 }
