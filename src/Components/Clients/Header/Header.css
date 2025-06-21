@@ -1,3 +1,30 @@
+:root {
+    --primary-color: #1dbfaf;
+    --secondary-color: #2a9d8f;
+    --white: #ffffff;
+    --dark: #333333;
+    --accent-color: #ff6b6b;
+    --text-color: #2d3436;
+    --light-gray: #f8f9fa;
+    --border-color: #e9ecef;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --gradient: linear-gradient(135deg, #1dbfaf 0%, #2a9d8f 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;

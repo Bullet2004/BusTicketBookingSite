@@ -1,11 +1,12 @@
 import React from 'react'
 import './BookCard.css'
+import danang from '../../../assets/danang.png';
 
 const BookCard = () => {
   return (
     <div className="route-item">
         <div className="demo-container">
-            <img src="/src/assets/img/lethuy.jpg" alt="" className="demo-image"/>
+            <img src={danang} alt="" className="demo-image"/>
             <span className="from">Tuyến xe từ</span>
             <span className="from-position">Lệ Thuỷ - Quảng Bình</span>
         </div>
