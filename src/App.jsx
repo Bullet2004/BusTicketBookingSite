@@ -7,14 +7,14 @@ import Footer from './Components/Clients/Footer/Footer'
 import Navbar from './Components/Admin/Navbar/Navbar'
 import ScheduleCard from './Components/Admin/ScheduleCard/ScheduleCard'
 import Sidebar from './Components/Admin/Sidebar/Sidebar'
+import Login from './Pages/Common/Login/Login'
+import Signup from './Pages/Common/Signup/Signup'
 
 function App() {
 
   return (
     <>
-      <Navbar/>
-      <Sidebar/>
-      <ScheduleCard/>
+      <Signup/>
     </>
   )
 }
