@@ -5,7 +5,7 @@
     --warning-admin-color: #f59e0b;
     --danger-admin-color: #ef4444;
     --sidebar-admin-bg: #1e293b;
-    --card-shadow-admin: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --admin-card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 body {
@@ -19,10 +19,14 @@ body {
 
 .navbar {
     background-color: var(--sidebar-admin-bg);
-    box-shadow: var(--card-shadow-admin);
+    box-shadow: var(--admin-card-shadow);
     padding: 16px 0;
     margin-bottom: 32px;
     margin-left: -32px;
+}
+
+.navbar ul {
+    margin-bottom: 0;
 }
 
 .containerFluid {

@@ -3,7 +3,7 @@ import styles from './AdminNavbar.module.css'
 
 const Navbar = () => {
   return (
-    <div className={styles.mainContent}>
+    <div className={styles.container}>
         <nav className={styles.navbar}>
             <div className={styles.containerFluid}>
                 <a className={styles.leftNav} href="#">Quản Lý Nhà Xe</a>

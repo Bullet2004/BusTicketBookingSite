@@ -13,17 +13,19 @@ import ClientHomePage from './Pages/Clients/ClientHomePage/ClientHomePage'
 import ClientIntroductionPage from './Pages/Clients/ClientIntroductionPage/ClientIntroductionPage'
 import ClientContactPage from './Pages/Clients/ClientContactPage/ClientContactPage'
 import ClientHistoryPage from './Pages/Clients/ClientHistoryPage/ClientHistoryPage'
+import AdminHomePage from './Pages/Admin/AdminHomePage/AdminHomePage';
 
 function App() {
   return (
-    <Routes>
-        <Route path="/" element={<ClientHomePage />} />
-        <Route path="/about" element={<ClientIntroductionPage />} />
-        <Route path="/contact" element={<ClientContactPage />} />
-        <Route path="/history" element={<ClientHistoryPage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-      </Routes>
+    // <Routes>
+    //     <Route path="/" element={<ClientHomePage />} />
+    //     <Route path="/about" element={<ClientIntroductionPage />} />
+    //     <Route path="/contact" element={<ClientContactPage />} />
+    //     <Route path="/history" element={<ClientHistoryPage />} />
+    //     <Route path="/login" element={<Login />} />
+    //     <Route path="/signup" element={<Signup />} />
+    //   </Routes>
+    <AdminHomePage/>
   )
 }
 
