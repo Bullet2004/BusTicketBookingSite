@@ -10,12 +10,13 @@ import Sidebar from './Components/Admin/Sidebar/Sidebar'
 import Login from './Pages/Common/Login/Login'
 import Signup from './Pages/Common/Signup/Signup'
 import ClientHomePage from './Pages/Clients/ClientHomePage/ClientHomePage'
+import ClientIntroductionPage from './Pages/Clients/ClientIntroductionPage/ClientIntroductionPage'
 
 function App() {
 
   return (
     <>
-      <ClientHomePage/>
+      <ClientIntroductionPage/>
     </>
   )
 }

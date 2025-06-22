@@ -1,0 +1,382 @@
+.introBackground {
+    width: 100%;
+    height: 100vh;
+    background: url('../../../assets/thienphu1.jpg') top center / cover no-repeat;
+    position: relative;
+}
+
+.introHeader {
+    position: absolute;
+    top: 30px;
+    left: 280px;
+    font-size: 30px;
+    color: #003366;
+}
+
+.introDescriptionGroup {
+    position: absolute;
+    top: 100px;
+    left: 280px;
+    font-size: 20px;
+}
+
+.introDescription {
+    color: #333333;
+}
+
+.introSlider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.introSliderContainer {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.introSliderGroup {
+    flex: 0 0 100%;
+    text-align: center;
+    max-width: 100%;
+    padding: 20px 250px;
+}
+
+.introSliderHeader {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #196666;
+}
+
+.introSliderDescription {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    word-wrap: break-word;
+}
+
+.sliderDots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #aab7c4;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dotActive {
+    background-color: #00a8a8;
+}
+
+.reasonDetails {
+    background-color: #09b2f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 200px;
+}
+
+.reasonHeader {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.reasonContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.reasonGroupRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.reasonGroup {
+    width: 500px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    margin-right: 30px;
+    padding: 0 50px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+    margin-bottom: 30px;
+}
+
+.reasonGroup:nth-child(2),
+.reasonGroup:nth-child(4) {
+    margin-right: -30px;
+}
+
+.reasonOverview {
+    color: #013264;
+    font-size: 30px;
+}
+
+.reasonDescription {
+    font-size: 16px;
+}
+
+/* Hero Section */
+.introHero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/img/thienphu1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 51px;
+}
+
+.heroContent {
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.heroTitle {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heroSubtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.heroDescription {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Features Section */
+.featuresSection {
+    padding: 5rem 2rem;
+    background: #f8f9fa;
+}
+
+.featuresContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.featureCard {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.featureCard:hover {
+    transform: translateY(-5px);
+}
+
+.featureIcon {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-client-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.featureIcon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.featureCard h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--client-text-color);
+}
+
+.featureCard p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Why Choose Us Section */
+.whyChooseUs {
+    padding: 5rem 2rem;
+    background: white;
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+
+.reasonsGrid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.reasonCard {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: floatUp 0.8s ease forwards;
+    animation-play-state: paused;
+}
+
+.reasonCard:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.reasonCard:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.reasonCard:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+.reasonCard:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+@keyframes floatUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reasonCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.reasonIcon {
+    width: 70px;
+    height: 70px;
+    background: var(--primary-client-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.reasonIcon i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.reasonCard h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--client-text-color);
+}
+
+.reasonCard p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .introHero {
+        margin-top: 13rem;
+        height: 30vh;
+    }
+
+    .heroContent {
+        margin-bottom: -10rem;
+    }
+
+    .heroTitle {
+        font-size: 2.5rem;
+    }
+
+    .heroSubtitle {
+        font-size: 1.2rem;
+    }
+
+    .heroDescription {
+        font-size: 1rem;
+    }
+
+    .featuresContainer,
+    .reasonsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .sectionTitle {
+        font-size: 2rem;
+    }
+
+    .featureCard,
+    .reasonCard {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroTitle {
+        font-size: 2rem;
+    }
+
+    .heroSubtitle {
+        font-size: 1rem;
+    }
+
+    .featureIcon,
+    .reasonIcon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .featureIcon i {
+        font-size: 1.5rem;
+    }
+
+    .reasonIcon i {
+        font-size: 1.4rem;
+    }
+}
