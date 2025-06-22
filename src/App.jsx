@@ -9,15 +9,13 @@ import ScheduleCard from './Components/Admin/ScheduleCard/ScheduleCard'
 import Sidebar from './Components/Admin/Sidebar/Sidebar'
 import Login from './Pages/Common/Login/Login'
 import Signup from './Pages/Common/Signup/Signup'
-import Loginv1 from './Pages/Common/Login/Loginv1'
+import ClientHomePage from './Pages/Clients/ClientHomePage/ClientHomePage'
 
 function App() {
 
   return (
     <>
-      <Navbar/>
-      <Sidebar/>
-      <ScheduleCard/>
+      <ClientHomePage/>
     </>
   )
 }

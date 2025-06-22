@@ -1,6 +1,6 @@
 .footer {
-    background-color: var(--dark);
-    color: var(--white);
+    background-color: var(--client-dark);
+    color: var(--client-white);
     padding: 4rem 5% 1rem;
     margin-top: 2rem;
 }
@@ -14,7 +14,7 @@
 }
 
 .footerSection h3 {
-    color: var(--primary-color);
+    color: var(--primary-client-color);
     margin-bottom: 1.2rem;
     font-size: 1.3rem;
 }
@@ -40,11 +40,11 @@
 }
 
 .footerSection ul li a:hover {
-    color: var(--primary-color);
+    color: var(--primary-client-color);
 }
 
 .ti-check.check-icon {
-    color: var(--primary-color);
+    color: var(--primary-client-color);
     margin-right: 5px;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .contactInfo li i {
-    color: var(--primary-color);
+    color: var(--primary-client-color);
     width: 20px;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .socialLinks a:hover {
-    color: var(--primary-color);
+    color: var(--primary-client-color);
 }
 
 .qrCode {

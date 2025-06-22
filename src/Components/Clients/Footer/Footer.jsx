@@ -1,4 +1,5 @@
 import React from 'react'
+import qr from '../../../assets/qr.png'
 import styles from './FooterClient.module.css'
 
 const Footer = () => {
@@ -48,7 +49,7 @@ const Footer = () => {
               <a href="#"><i className="fab fa-instagram"></i></a>
             </div>
             <div className={styles.qrCode}>
-              <img src="/src/assets/img/qr.png" alt="Zalo QR Code" />
+              <img src={qr} alt="Zalo QR Code" />
             </div>
           </div>
         </div>

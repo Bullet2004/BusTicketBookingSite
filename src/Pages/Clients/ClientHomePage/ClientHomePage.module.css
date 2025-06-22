@@ -1,0 +1,694 @@
+.sliderContainer {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 1.3rem;
+}
+
+.slider {
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slideContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(---client-white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slideContent h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.slideContent p {
+    font-size: 1.5rem;
+}
+
+.sliderBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.3);
+    color: var(--client-white);
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.sliderBtn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.prev {
+    left: 2rem;
+}
+
+.next {
+    right: 2rem;
+}
+
+.sliderDots {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: var(--client-white);
+} 
+
+#body {
+    margin-top: -26px;
+}
+
+/* Slogan Section */
+.sloganSection {
+    background: var(--client-gradient);
+    padding: 2rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sloganSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/src/assets/img/pattern.png') repeat;
+    opacity: 0.1;
+}
+
+.sloganContent {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sloganTitle {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sloganText {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.sloganFeatures {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.sloganFeature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+
+.sloganFeature i {
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.8rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.sloganFeature:hover i {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.sloganFeature span {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Commitment Section */
+.commitment {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background: white;
+    margin: 4rem 0;
+    box-shadow: var(--client-shadow);
+    border-radius: 20px;
+    max-width: 1200px;
+    margin: 4rem auto;
+}
+
+.busImage {
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+}
+
+.busImg {
+    max-width: 100%;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.commitmentDetail {
+    flex: 1;
+    padding: 2rem;
+}
+
+.commitmentHeader {
+    color: var(--primary-client-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.commitmentHeader::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: var(--client-gradient);
+    border-radius: 3px;
+}
+
+.commitmentList {
+    list-style: none;
+    padding: 0;
+}
+
+.commitmentItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+    background: var(---client-light-gray);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid var(---client-border-color);
+}
+
+.commitmentItem:hover {
+    transform: translateX(10px);
+    background: white;
+    box-shadow: var(---client-shadow);
+}
+
+.commitmentIcon {
+    color: var(--primary-client-color);
+    font-size: 1.8rem;
+    margin-right: 1.2rem;
+    background: rgba(29, 191, 175, 0.1);
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+
+/* Routes Section */
+.title {
+    text-align: center;
+    color: var(--primary-client-color);
+    font-size: 2.5rem;
+    margin: 4rem 0;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: var(--client-gradient);
+    border-radius: 3px;
+}
+
+.listRoutes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+} 
+
+/* Floating Buttons */
+.floatingButtons {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 1000;
+}
+
+.floatingButton {
+    position: relative;
+    background: #1dbfaf;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s, width 0.3s;
+    overflow: visible;
+}
+
+.floatingButton:hover {
+    background: #1a9f8f;
+    width: 200px;
+    border-radius: 25px;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.tooltip {
+    position: absolute;
+    right: 70px;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.floatingButton:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-10px);
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .modal.open {
+    display: flex;
+  }
+  
+  .modalContainer {
+    background: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.3s;
+  }
+  
+  .modalHeader {
+    background-color: #009688;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  .ticketIcon {
+    margin-right: 16px;
+  }
+  
+  .modalClose {
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .modalClose:hover {
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .modalGroup {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .infoLabel {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .infoInput {
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  .okBtn {
+    border: none;
+    margin: 10px 20px;
+    padding: 18px;
+    width: 860px;
+    background: #009688;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .okBtn:hover {
+    opacity: 0.8;
+  }
+  
+  @keyframes modalFadeIn {
+    from {
+      transform: translateY(-100px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .floatingButton:nth-child(1) {
+    position: fixed;
+    bottom: 200px;
+    right: 20px;
+  }
+  .floatingButton:nth-child(2) {
+    position: fixed;
+    bottom: 140px;
+    right: 20px;
+  }
+
+  .floatingButton i {
+    font-size: 24px;
+    transition: margin 0.3s;
+  }
+  .floatingButton span {
+    font-size: 16px;
+  }
+  .tooltip {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, transform 0.3s;
+    white-space: nowrap;
+    transform: scaleX(0);
+    transform-origin: left;
+    position: absolute;
+    left: 60px;
+    color: white;
+    border-radius: 5px;
+  }
+  .floatingButton:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  
+  #phoneBtn i {
+    animation: rotate-shake 1s ease-in-out infinite;
+  }
+
+  
+  @keyframes rotate-shake {
+    0%, 100% { transform: rotate(0); }
+    10% { transform: rotate(-10deg); }
+    20% { transform: rotate(10deg); }
+    30% { transform: rotate(-10deg); }
+    40% { transform: rotate(10deg); }
+    50% { transform: rotate(0); }
+  }
+  
+.infoIabel {
+    color: #666;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.infoInput:focus {
+    outline: none;
+    border-color: var(--primary-client-color);
+    box-shadow: 0 0 0 3px rgba(29, 191, 175, 0.1);
+}
+
+.okBtn {
+    background: var(--client-gradient);
+    color: white;
+    border: none;
+    padding: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.okBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(29, 191, 175, 0.3);
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    html {
+        font-size: 10px;
+    }
+
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navLinks {
+    margin-top: 1.5rem;
+  }
+
+  .authButtons {
+    margin: 1.5rem 0;
+  }
+
+  .floatingButtons {
+    right: 1rem;
+    bottom: 2rem;
+  }
+
+  .sliderContainer {
+    height: 50vh;
+  }
+
+  .slideContent {
+    width: 100%;
+    top: 75%;
+  }
+
+  .sloganTitle {
+    font-size: 1.8rem;
+    }
+  
+  .commitment {
+      flex-direction: column;
+      margin: 4rem 0.5rem;
+    }
+
+  .commitmentHeader,
+  .title {
+        font-size: 2rem;
+    }
+    
+  .commitmentHeader {
+        width: 100%;
+    }
+
+  .modalContainer {
+    width: 90%;
+  }
+
+  .modalHeader {
+    height: 7rem;
+    font-size: 2rem;
+  }
+
+  .modalGroup input {
+    font-size: 1rem;
+  }
+
+  .okBtn {
+    width: 90%;
+    padding: 1rem;
+  }
+.footerSection:last-child {
+    margin: auto;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navLinks {
+    margin-top: 1.5rem;
+  }
+
+  .authButtons {
+    margin: 1.5rem 0;
+  }
+
+   .sliderContainer {
+    height: 50vh;
+  }
+
+  .slideContent {
+    width: 100%;
+    top: 75%;
+  }
+
+  .sloganTitle {
+    font-size: 1.8rem;
+    }
+  
+  .commitment {
+      flex-direction: column;
+      margin: 4rem 0.5rem;
+    }
+
+  .commitmentHeader,
+  .title {
+        font-size: 2rem;
+    }
+    
+  .modalContainer {
+    width: 90%;
+  }
+
+  .modalHeader {
+    height: 7rem;
+    font-size: 2rem;
+  }
+
+  .modalGroup input {
+    font-size: 1rem;
+  }
+
+  .okBtn {
+    width: 95%;
+    padding: 1rem;
+  }
+}
+
+/* Laptop nhỏ */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navLinks {
+    margin-top: 1.5rem;
+  }
+
+  .authButtons {
+    margin: 1.5rem 0;
+  }
+
+   .sliderContainer {
+    height: 50vh;
+  }
+
+  .slideContent {
+    width: 100%;
+    top: 75%;
+  }
+
+  .footerSection:last-child {
+    margin: auto;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  /* CSS cho màn hình desktop trở lên */
+}
