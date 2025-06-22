@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../../assets/logo.svg'
 import styles from './Login.module.css'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   return (
@@ -40,13 +41,13 @@ const Login = () => {
             <a href="#" className={styles.forgotPassword}>Quên mật khẩu?</a>
           </div>
 
-          <button type="submit" className={styles.formSubmit}>
+          <Link to="/" type="submit" className={styles.formSubmit}>
             <i className="fas fa-sign-in-alt"></i>
             Đăng nhập
-          </button>
+          </Link>
 
           <div className={styles.registerLink}>
-            Chưa có tài khoản? <a href="/src/view/common_view/signup.html">Đăng ký ngay</a>
+            Chưa có tài khoản? <Link to="/signup" className={styles.to}>Đăng ký ngay</Link>
           </div>
         </form>
       </div>

@@ -213,14 +213,14 @@ html, body {
   font-size: 14px;
 }
 
-.registerLink a {
+.registerLink .to {
   color: #2a9d8f;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
-.registerLink a:hover {
+.registerLink .to:hover {
   color: #4cd6c4;
 }
 

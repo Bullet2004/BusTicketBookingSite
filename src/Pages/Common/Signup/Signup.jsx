@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../../assets/logo.svg'
 import styles from '../Login/Login.module.css'
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
   return (
@@ -69,8 +70,8 @@ const Signup = () => {
             Đăng ký
           </button>
 
-          <div className={styles.registerLink}>
-            Đã có tài khoản? <a href="/src/view/common_view/login.html">Đăng nhập</a>
+          <div to="/login" className={styles.registerLink}>
+            Đã có tài khoản? <Link to="/login" className={styles.to}>Đăng nhập</Link>
           </div>
         </form>
       </div>

@@ -1,24 +1,33 @@
 import React from 'react'
 import styles from './ClientNavbar.module.css';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
     <header>
-        <nav className={styles.navbar}>
-            <div className={styles.logo}>
-                <h1>Phuc Nguyen</h1>
-            </div>
-            <ul className={styles.navLinks}>
-                <li><a href="./index.html" className={styles.active}>Trang chủ</a></li>
-                <li><a href="./introduction.html">Giới thiệu</a></li>
-                <li><a href="./contact.html">Liên hệ</a></li>
-                <li><a href="./history.html">Lịch sử đặt vé</a></li>
-            </ul>
-            <div className={styles.authButtons}>
-                <a href="../common_view/login.html" className={styles.loginBtn}>Đăng nhập</a>
-                <a href="../common_view/signup.html" className={styles.signupBtn}>Đăng ký</a>
-            </div>
-        </nav>
+      <nav className={styles.navbar}>
+        <div className={styles.logo}>
+          <h1>Phuc Nguyen</h1>
+        </div>
+        <ul className={styles.navLinks}>
+          <li>
+            <NavLink to="/" className={({ isActive }) => `${styles.navItem} ${isActive ? styles.active : ''}`}>Trang chủ</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" className={({ isActive }) => `${styles.navItem} ${isActive ? styles.active : ''}`}>Giới thiệu</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" className={({ isActive }) => `${styles.navItem} ${isActive ? styles.active : ''}`}>Liên hệ</NavLink>
+          </li>
+          <li>
+            <NavLink to="/history" className={({ isActive }) => `${styles.navItem} ${isActive ? styles.active : ''}`}>Lịch sử đặt vé</NavLink>
+          </li>
+        </ul>
+        <div className={styles.authButtons}>
+          <NavLink to="/login" className={styles.loginBtn}>Đăng nhập</NavLink>
+          <NavLink to="/signup" className={styles.signupBtn}>Đăng ký</NavLink>
+        </div>
+      </nav>
     </header>
   )
 }

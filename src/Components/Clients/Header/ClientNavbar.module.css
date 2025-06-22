@@ -68,8 +68,7 @@ body {
 
 .navLinks li:hover::after {
     width: 100%;
-}
-
+} 
 
 .navLinks {
     display: flex;
@@ -84,8 +83,8 @@ body {
     transition: color 0.3s ease;
 }
 
-.navLinks a:hover,
-.navLinks a.active {
+.navLinks li .navItem:hover,
+.navLinks li .navItem.active {
     color: var(--primary-client-color);
 }
 

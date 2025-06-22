@@ -27,6 +27,7 @@
 
 .footerSection ul {
     list-style: none;
+    padding-left: 0;
 }
 
 .footerSection ul li {
@@ -43,9 +44,9 @@
     color: var(--primary-client-color);
 }
 
-.ti-check.check-icon {
+.footerSection ul li i {
     color: var(--primary-client-color);
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .contactInfo li {

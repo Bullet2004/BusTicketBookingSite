@@ -102,19 +102,19 @@ const ClientHomePage = () => {
             <h1 className={styles.commitmentHeader}>TẠI SAO NÊN ĐẶT XE CỦA CHÚNG TÔI ?</h1>
             <ul className={styles.commitmentList}>
               <li className={styles.commitmentItem}>
-                <i className={`ti-check-box ${styles.commitmentIcon}`}></i>
+                <i className={`fa-solid fa-check ${styles.commitmentIcon}`}></i>
                 <span>Uy tín, chất lượng</span>
               </li>
               <li className={styles.commitmentItem}>
-                <i className={`ti-check-box ${styles.commitmentIcon}`}></i>
+                <i className={`fa-solid fa-check ${styles.commitmentIcon}`}></i>
                 <span>Tiện nghi, thoải mái như ở nhà</span>
               </li>
               <li className={styles.commitmentItem}>
-                <i className={`ti-check-box ${styles.commitmentIcon}`}></i>
+                <i className={`fa-solid fa-check ${styles.commitmentIcon}`}></i>
                 <span>Đưa đón tận nơi</span>
               </li>
               <li className={styles.commitmentItem}>
-                <i className={`ti-check-box ${styles.commitmentIcon}`}></i>
+                <i className={`fa-solid fa-check ${styles.commitmentIcon}`}></i>
                 <span>Phục vụ khách hàng hết mình</span>
               </li>
             </ul>
@@ -151,12 +151,12 @@ const ClientHomePage = () => {
 
         <div className={`${styles.modal} ${visible?styles.open:""}`} onClick={()=>setVisible(false)}>
           <div className={styles.modalContainer} onClick={(e)=>e.stopPropagation()}>
-            <div className={styles.modalClose}>
-              <i className="ti-close"></i>
+            <div className={styles.modalClose} onClick={()=>setVisible(false)}>
+              <i class="fa-solid fa-xmark"></i>
             </div>
 
             <header className={styles.modalHeader}>
-              <i className="ti-bag"></i>
+              <i class="fa-solid fa-briefcase"></i>
               Đặt vé
             </header>
 

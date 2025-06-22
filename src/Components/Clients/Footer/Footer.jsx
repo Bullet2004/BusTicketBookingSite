@@ -11,15 +11,15 @@ const Footer = () => {
             <h3>Cam kết</h3>
             <ul>
               <li>
-                <i className="ti-check check-icon"></i>
+                <i class="fa-solid fa-check"></i>
                 Uy tín
               </li>
               <li>
-                <i className="ti-check check-icon"></i>
+                <i class="fa-solid fa-check"></i>
                 Chất lượng
               </li>
               <li>
-                <i className="ti-check check-icon"></i>
+                <i class="fa-solid fa-check"></i>
                 Tận tình
               </li>
             </ul>
