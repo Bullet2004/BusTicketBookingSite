@@ -49,6 +49,10 @@
     margin-right: 10px;
 }
 
+.footerSection ul li {
+    color: #ccc;
+}
+
 .contactInfo li {
     display: flex;
     align-items: center;

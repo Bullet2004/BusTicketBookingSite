@@ -1,9 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../../assets/logo.svg'
 import styles from './Login.module.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Login = () => {
+  const navigate = useNavigate()
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
+  const [error, setError] = useState('')
+
+  const account = [
+    {
+      username: 'user',
+      password: '123456',
+      role: 'client'
+    },
+    {
+      username: 'admin',
+      password: '123456',
+      role: 'admin'
+    }
+  ]
+
+  const handleLogin = (e) => {
+    e.preventDefault()
+
+    const found = account.find(
+      (acc) => acc.username === username && acc.password === password
+    )
+
+    if (found) {
+      if (found.role === 'admin') {
+        navigate('/admin')
+      } else {
+        navigate('/')
+      }
+    } else {
+      setError('Tên đăng nhập hoặc mật khẩu không đúng')
+    }
+  }
+
   return (
     <div className={styles.main}>
       <div className={styles.loginContainer}>
@@ -15,36 +51,39 @@ const Login = () => {
           </div>
         </div>
 
-        <form className={styles.form} id="form-1">
+        <form className={styles.form} onSubmit={handleLogin}>
           <div className={styles.formGroup}>
             <div className={styles.inputGroup}>
               <i className={`fas fa-user ${styles.inputIcon}`}></i>
-              <input id="username" name="username" rules="required" type="text" placeholder="Tên đăng nhập" className={styles.formControl} />
+              <input
+                type="text"
+                placeholder="Tên đăng nhập"
+                className={styles.formControl}
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+              />
             </div>
-            <span className={styles.formMessage}></span>
           </div>
 
           <div className={styles.formGroup}>
             <div className={styles.inputGroup}>
               <i className={`fas fa-lock ${styles.inputIcon}`}></i>
-              <input id="password" name="password" type="password" placeholder="Mật khẩu" className={styles.formControl} />
-              <i className={`fas fa-eye-slash ${styles.togglePassword}`}></i>
+              <input
+                type="password"
+                placeholder="Mật khẩu"
+                className={styles.formControl}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
             </div>
-            <span className={styles.formMessage}></span>
           </div>
 
-          <div className={styles.formOptions}>
-            <label className={styles.rememberMe}>
-              <input type="checkbox" name="remember" />
-              <span>Ghi nhớ đăng nhập</span>
-            </label>
-            <a href="#" className={styles.forgotPassword}>Quên mật khẩu?</a>
-          </div>
+          {error && <p style={{ color: 'red', marginBottom: '10px' }}>{error}</p>}
 
-          <Link to="/" type="submit" className={styles.formSubmit}>
+          <button type="submit" className={styles.formSubmit}>
             <i className="fas fa-sign-in-alt"></i>
             Đăng nhập
-          </Link>
+          </button>
 
           <div className={styles.registerLink}>
             Chưa có tài khoản? <Link to="/signup" className={styles.to}>Đăng ký ngay</Link>

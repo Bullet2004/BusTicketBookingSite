@@ -16,29 +16,29 @@ const ClientHomePage = () => {
 
   const routes = [
     {
-      img: {danang},
-      from: 'Lệ Thuỷ - Quảng Bình',
+      image: danang,
+      start: 'Lệ Thuỷ - Quảng Bình',
       destination: 'Đà Nẵng',
       price: 150000,
       during: '250km - 5 giờ'
     },
     {
-      img: hue,
-      from: 'Đồng Hới - Quảng Bình',
+      image: hue,
+      start: 'Đồng Hới - Quảng Bình',
       destination: 'Huế',
       price: 120000,
       during: '200km - 4 giờ'
     },
     {
-      img: lethhuy,
-      from: 'Lệ Thuỷ - Quảng Bình',
+      image: lethhuy,
+      start: 'Lệ Thuỷ - Quảng Bình',
       destination: 'Đồng Hới - Quảng Bình',
       price: 50000,
       during: '50km - 30 phút'
     },
     {
-      img: hcm,
-      from: 'Đà Nẵng',
+      image: hcm,
+      start: 'Đà Nẵng',
       destination: 'TP. Hồ Chí Minh',
       price: 500000,
       during: '900km - 18 giờ'
@@ -126,8 +126,8 @@ const ClientHomePage = () => {
           {routes.map((route, index) => (
             <BookCard
               key={index}
-              img={hue}
-              from={route.from}
+              img={route.image}
+              start={route.start}
               destination={route.destination}
               price={route.price}
               during={route.during}

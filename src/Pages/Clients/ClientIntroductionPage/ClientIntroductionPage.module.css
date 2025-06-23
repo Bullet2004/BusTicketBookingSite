@@ -9,7 +9,7 @@
     position: absolute;
     top: 30px;
     left: 280px;
-    font-size: 30px;
+    font-size: 1.2rem;
     color: #003366;
 }
 
@@ -17,7 +17,7 @@
     position: absolute;
     top: 100px;
     left: 280px;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .introDescription {
@@ -48,13 +48,13 @@
 }
 
 .introSliderHeader {
-    font-size: 30px;
+    font-size: 1.2rem;
     margin-bottom: 15px;
     color: #196666;
 }
 
 .introSliderDescription {
-    font-size: 18px;
+    font-size: 1.3rem;
     line-height: 1.6;
     color: #333;
     word-wrap: break-word;
@@ -91,7 +91,7 @@
 
 .reasonHeader {
     text-align: center;
-    font-size: 30px;
+    font-size: 1.4rem;
     color: #fff;
     margin-bottom: 40px;
 }
@@ -125,11 +125,11 @@
 
 .reasonOverview {
     color: #013264;
-    font-size: 30px;
+    font-size: 1.4rem;
 }
 
 .reasonDescription {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* Hero Section */
@@ -169,6 +169,7 @@
     font-size: 1.1rem;
     line-height: 1.6;
     opacity: 0.9;
+    color: white;
 }
 
 /* Features Section */
@@ -192,6 +193,14 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
     text-align: center;
+}
+
+.featureCard h3 {
+    font-size: 1.2rem;
+}
+
+.featureCard p {
+    font-size: 1.2rem;
 }
 
 .featureCard:hover {
@@ -235,7 +244,12 @@
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: var(--text-color);
+    color: var(--client-text-color);
+}
+
+.sectionTitle::after {
+    width: 0 !important;
+    height: 0 !important;
 }
 
 .reasonsGrid {
@@ -257,6 +271,10 @@
     transform: translateY(50px);
     animation: floatUp 0.8s ease forwards;
     animation-play-state: paused;
+}
+
+.reasonTitle, .reasonDesc {
+    font-size: 3rem;
 }
 
 .reasonCard:nth-child(1) {
@@ -320,7 +338,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .introHero {
         margin-top: 13rem;
         height: 30vh;
@@ -339,7 +357,7 @@
     }
 
     .heroDescription {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .featuresContainer,
@@ -355,28 +373,83 @@
     .reasonCard {
         padding: 1.5rem;
     }
+
+        .reasonCard h3 {
+        font-size: 1.2rem;
+    }
+    .reasonCard p {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 480px) {
+     .heroContent {
+        margin-bottom: -10rem;
+    }
+
     .heroTitle {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .heroSubtitle {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
-    .featureIcon,
-    .reasonIcon {
-        width: 60px;
-        height: 60px;
+    .heroDescription {
+        font-size: 1.1rem;
     }
 
-    .featureIcon i {
-        font-size: 1.5rem;
+    .featuresContainer,
+    .reasonsGrid {
+        grid-template-columns: 1fr;
     }
 
-    .reasonIcon i {
-        font-size: 1.4rem;
+    .sectionTitle {
+        font-size: 2rem;
+    }
+
+    .featureCard,
+    .reasonCard {
+        padding: 1.5rem;
+    }
+
+    .reasonCard h3 {
+        font-size: 1.2rem;
+    }
+    .reasonCard p {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (min-width: 767px) and (max-width: 991px) {
+     .heroContent {
+        margin-bottom: -10rem;
+    }
+
+    .heroTitle {
+        font-size: 2.5rem;
+    }
+
+    .heroSubtitle {
+        font-size: 1.2rem;
+    }
+
+    .heroDescription {
+        font-size: 1.1rem;
+    }
+
+    .featuresContainer,
+    .reasonsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .sectionTitle {
+        font-size: 2rem;
+    }
+
+    .featureCard,
+    .reasonCard {
+        padding: 1.5rem;
     }
 }

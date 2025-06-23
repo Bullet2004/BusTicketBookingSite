@@ -23,6 +23,7 @@ body {
     background-color: var(--client-light-gray);
     color: var(--text-client-color);
     line-height: 1.6;
+    font-size: 1.1rem !important;
 }
 
 .navbar {
@@ -120,4 +121,43 @@ body {
 .signupBtn:hover {
     background-color: transparent;
     color: var(--primary-client-color);
+}
+
+@media (max-width: 767px) {
+
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navItem {
+    font-size: 1.2rem;
+  }
+
+  .navLinks {
+    margin-top: 1.5rem;
+  }
+
+  .authButtons {
+    margin: 1.5rem 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navItem {
+    font-size: 1.2rem;
+  }
+
+  .navLinks {
+    margin-top: 1.5rem;
+  }
+
+  .authButtons {
+    margin: 1.5rem 0;
+  }
 }

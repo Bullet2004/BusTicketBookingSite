@@ -136,6 +136,10 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.sloganTitle::after {
+  background-color: var(--primary-client-color) !important;
+}
+
 .sloganText {
     color: rgba(255, 255, 255, 0.9);
     font-size: 1.2rem;
@@ -246,16 +250,16 @@
     align-items: center;
     margin-bottom: 1.5rem;
     padding: 1.2rem;
-    background: var(---client-light-gray);
+    background: var(--client-light-gray) !important;
     border-radius: 12px;
     transition: all 0.3s ease;
-    border: 1px solid var(---client-border-color);
+    border: 1px solid var(---client-border-color) !important;
 }
 
 .commitmentItem:hover {
     transform: translateX(10px);
     background: white;
-    box-shadow: var(---client-shadow);
+    box-shadow: var(---client-shadow) !important;
 }
 
 .commitmentIcon {
@@ -285,7 +289,7 @@
     transform: translateX(-50%);
     width: 100px;
     height: 3px;
-    background: var(--client-gradient);
+    background: var(--client-gradient) I !important;
     border-radius: 3px;
 }
 
@@ -538,9 +542,6 @@
 
 /* Mobile */
 @media (max-width: 767px) {
-    html {
-        font-size: 10px;
-    }
 
   .navbar {
     flex-direction: column;

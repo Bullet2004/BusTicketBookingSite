@@ -86,8 +86,8 @@ const ClientIntroductionPage = () => {
                             <div className={styles.reasonIcon}>
                                 <i className="fas fa-star"></i>
                             </div>
-                            <h3>{reason.title}</h3>
-                            <p>{reason.desc}</p>
+                            <h3 className={styles.reasonTitle}>{reason.title}</h3>
+                            <p className={styles.reasonDesc}>{reason.desc}</p>
                         </div>
                     ))}
                 </div>

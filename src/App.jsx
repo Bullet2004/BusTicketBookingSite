@@ -17,18 +17,24 @@ import AdminHomePage from './Pages/Admin/AdminHomePage/AdminHomePage';
 import AdminSchedulePage from './Pages/Admin/AdminSchedulePage/AdminSchedulePage';
 import AdminTicketPage from './Pages/Admin/AdminTicketPage/AdminTicketPage';
 import AdminRevenuePage from './Pages/Admin/AdminRevenuePage/AdminRevenuePage';
+import AdminFeedbackPage from './Pages/Admin/AdminFeedbackPage/AdminFeedbackPage';
 
 function App() {
   return (
-    // <Routes>
-    //     <Route path="/" element={<ClientHomePage />} />
-    //     <Route path="/about" element={<ClientIntroductionPage />} />
-    //     <Route path="/contact" element={<ClientContactPage />} />
-    //     <Route path="/history" element={<ClientHistoryPage />} />
-    //     <Route path="/login" element={<Login />} />
-    //     <Route path="/signup" element={<Signup />} />
-    //   </Routes>
-    <AdminRevenuePage/>
+      <Routes>
+        <Route path="/" element={<ClientHomePage />} />
+        <Route path="/about" element={<ClientIntroductionPage />} />
+        <Route path="/contact" element={<ClientContactPage />} />
+        <Route path="/history" element={<ClientHistoryPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+
+        <Route path="/admin" element={<AdminHomePage />} />
+        <Route path="/admin/schedule" element={<AdminSchedulePage />} />
+        <Route path="/admin/ticket" element={<AdminTicketPage />} />
+        <Route path="/admin/revenue" element={<AdminRevenuePage />} />
+        <Route path="/admin/feedback" element={<AdminFeedbackPage />} />
+      </Routes>
   )
 }
 

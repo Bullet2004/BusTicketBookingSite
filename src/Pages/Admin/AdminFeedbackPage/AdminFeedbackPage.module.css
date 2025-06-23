@@ -1,0 +1,105 @@
+/* AdminFeedbackPage.module.css */
+:root {
+    --fb-primary-color: #2563eb;
+    --fb-primary-hover: #1d4ed8;
+    --fb-success-color: #059669;
+    --fb-danger-color: #dc2626;
+    --fb-warning-color: #d97706;
+    --fb-text-primary: #1e293b;
+    --fb-text-secondary: #64748b;
+    --fb-border-color: #e2e8f0;
+    --fb-highlight-bg: #f8fafc;
+    --fb-card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: 300px;
+    padding: 5px 30px 30px 10px;
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: var(--fb-card-shadow);
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--fb-text-primary);
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--fb-primary-color);
+    border-radius: 2px;
+}
+
+.feedbackList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feedbackItem {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    box-shadow: var(--fb-card-shadow);
+    transition: all 0.3s ease;
+    border: 1px solid var(--fb-border-color);
+}
+
+.feedbackItem:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.unread {
+    background: var(--fb-highlight-bg);
+    border-left: 4px solid var(--fb-primary-color);
+}
+
+.feedbackItem img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+    border: 2px solid var(--fb-border-color);
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.name {
+    font-weight: 600;
+    color: var(--fb-text-primary);
+}
+
+.message {
+    color: var(--fb-text-secondary);
+    font-size: 0.875rem;
+}
+
+.timestamp {
+    font-size: 0.75rem;
+    color: var(--fb-text-secondary);
+    margin-left: auto;
+    white-space: nowrap;
+}
