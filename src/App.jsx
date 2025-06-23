@@ -16,6 +16,7 @@ import ClientHistoryPage from './Pages/Clients/ClientHistoryPage/ClientHistoryPa
 import AdminHomePage from './Pages/Admin/AdminHomePage/AdminHomePage';
 import AdminSchedulePage from './Pages/Admin/AdminSchedulePage/AdminSchedulePage';
 import AdminTicketPage from './Pages/Admin/AdminTicketPage/AdminTicketPage';
+import AdminRevenuePage from './Pages/Admin/AdminRevenuePage/AdminRevenuePage';
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
     //     <Route path="/login" element={<Login />} />
     //     <Route path="/signup" element={<Signup />} />
     //   </Routes>
-    <AdminTicketPage/>
+    <AdminRevenuePage/>
   )
 }
 
